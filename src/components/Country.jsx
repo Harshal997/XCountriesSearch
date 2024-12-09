@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../App.css'
 const Country = ({ name, flag }) => {
   return (
     <div
@@ -15,6 +15,7 @@ const Country = ({ name, flag }) => {
         borderStyle: 'solid',
         borderRadius: 10,
       }}
+      className="countryCard"
     >
       <img src={flag} alt={name} height={100} width={100} />
       <p>{name}</p>
