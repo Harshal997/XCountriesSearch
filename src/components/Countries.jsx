@@ -31,7 +31,7 @@ export const Countries = () => {
         {countries &&
           countries.length > 0 &&
           countries.map((country, index) => (
-            <Country key={index} name={country.name} flag={country.flag} />
+            <Country key={index} name={country.name.common} flag={country.flags.png} />
           ))}
       </div>
     </div>

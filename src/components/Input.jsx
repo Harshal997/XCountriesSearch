@@ -2,7 +2,7 @@ import React from "react";
 
 export const Input = ({ countriesInitial, setCountries }) => {
   const handleChange = (e) => {
-    setCountries(countriesInitial.filter((country) => country.name.toLowerCase().includes(e.target.value.toLowerCase())));
+    setCountries(countriesInitial.filter((country) => country.name.common.toLowerCase().includes(e.target.value.toLowerCase())));
   };
 
   return (
